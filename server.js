@@ -21,6 +21,10 @@ app.post('/', (req, res) => {
   
   res.send("Hello")
 })
+app.get('/', (req, res) => {
+  
+  res.send("Hello")
+})
 
 app.post('/webhook', (req, res) => {
   var text = req.body.events[0].message.text
